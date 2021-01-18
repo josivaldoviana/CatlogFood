@@ -1,0 +1,10 @@
+<h2>Buscar receita</h2>
+<form action="/kitchen" method="GET">
+    <label>Name</label>
+    <input type="text" name="name">
+    <button type="submit">Buscar</button>
+</form>
+<br>
+<% kitchen.forEach(dish => { %>
+    <div><%= dish.name %> </div> 
+<% }) %> 
